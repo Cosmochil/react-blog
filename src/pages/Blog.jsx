@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Body from '../components/Body'
 
 function Blog() {
     return (
         <div className="Blog">
             <Navbar />
             <div className="content">
-                <h1>App Components</h1>
+                <Body />
             </div>
         </div>
     )
