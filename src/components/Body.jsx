@@ -1,8 +1,9 @@
 import { React, useState } from "react";
 import styled from "styled-components";
+import BlogLists from './BlogLists'
 
 function Body() {
-  const [blogs, setBlogs] = useState([
+  const [articles, setArticles] = useState([
     {
       title: "Testing the useState hook",
       body: "The useState is a function to make a reactive value, and also provide us with a way to change that value whenever we want.",
@@ -20,30 +21,11 @@ function Body() {
     },
   ]);
   const Body = styled.div``;
-  const ContentContainer = styled.div`
-    padding: 10px 16px;
-    margin: 20px 0;
-    &: hover {
-      box-shadow: 1px 3px 9px rgba(255, 229, 217, 0.1);
-    }
-  `;
-  const ContentHeader = styled.h2`
-    font-size: 2rem;
-    color: #f1356d;
-  `;
-
-  const Content = styled.p`
-    font-size: 1.2rem;
-  `;
+  
 
   return (
     <Body>
-      {blogs.map((blog) => (
-        <ContentContainer key={blog.id}>
-          <ContentHeader>{blog.title}</ContentHeader>
-          <Content>{blog.body}</Content>
-        </ContentContainer>
-      ))}
+      <BlogLists blogs={articles} />
     </Body>
   );
 }
