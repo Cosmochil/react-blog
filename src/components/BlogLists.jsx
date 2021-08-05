@@ -2,18 +2,19 @@ import React from 'react';
 import styled from 'styled-components'
 import Button from './Button'
 
-function BlogLists(props) {
-    const articles = props.blogs;
+function BlogLists({blogs, deleteBlog}) {
+    const articles = blogs;
     const ContentContainer = styled.div`
       padding: 10px 16px;
       margin: 20px 0;
+      border-radius: 20px;
       &: hover {
-        box-shadow: 1px 3px 9px rgba(255, 229, 217, 0.1);
+        box-shadow: 0px 0px 12px rgba(96, 219, 251, .3);
       }
     `;
     const ContentHeader = styled.h2`
       font-size: 2rem;
-      color: #f1356d;
+      color: #60dbfb;
     `;
 
     const Content = styled.p`
@@ -25,10 +26,12 @@ function BlogLists(props) {
           <ContentContainer key={article.id}>
             <ContentHeader>{article.title}</ContentHeader>
             <Content>{article.body}</Content>
+            <Button
+              buttonType="primary"
+              onClick={() => deleteBlog(article.id)}
+            >Delete Blog</Button>
           </ContentContainer>
         ))}
-        <Button buttonType='primary'>I am a primary button</Button>
-        <Button>I am ordinary button</Button>
       </div>
     );
 }

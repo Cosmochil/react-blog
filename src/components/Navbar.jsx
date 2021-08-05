@@ -8,10 +8,10 @@ function Navbar() {
     align-items: center;
     max-width: 80vw;
     margin: 0 auto;
-    border-bottom: 1px solid #ffcad4;
+    border-bottom: 1px solid #fff;
   `;
   const NavHeader = styled.h1`
-    color: #f1356d;
+    color: #60dbfb;
     font-size: 2em;
   `;
   const NavLinkContainer = styled.div`
@@ -22,9 +22,9 @@ function Navbar() {
     text-decoration: none;
     font-size: 1.2rem;
     padding: 6px;
-    color: #f1356d;
+    color: #60dbfb;
     &: hover {
-      color: #ffcad4;
+      text-shadow: 0px 0px 10px #60dbfb;
     }
   `;
 
@@ -32,9 +32,10 @@ function Navbar() {
     <div>
       <Navbar className="navbar">
         <NavHeader>React Blog</NavHeader>
+        
         <NavLinkContainer className="navlinks">
-          <NavLinks href="/blog">Home</NavLinks>
-          <NavLinks href="/create">New Blog</NavLinks>
+          <NavLinks href="/blog">HOME</NavLinks>
+          <NavLinks href="/create">NEW BLOG</NavLinks>
         </NavLinkContainer>
       </Navbar>
     </div>
