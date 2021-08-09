@@ -26,10 +26,9 @@ function BlogLists({blogs, deleteBlog}) {
           <ContentContainer key={article.id}>
             <ContentHeader>{article.title}</ContentHeader>
             <Content>{article.body}</Content>
-            <Button
-              buttonType="primary"
-              onClick={() => deleteBlog(article.id)}
-            >Delete Blog</Button>
+            <Button buttonType="primary" onClick={() => deleteBlog(article.id)}>
+              Delete Blog
+            </Button>
           </ContentContainer>
         ))}
       </div>
