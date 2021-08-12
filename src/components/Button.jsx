@@ -7,7 +7,8 @@ export default styled.button`
       : `border: 2px solid #60dbfb; border-radius: 15px; color: #282c34; background: #60dbfb;`}
   font-size: 1rem;
   font-family: "ItimReg";
-  padding: 7px 10px;
+  padding: 7px 14px;
+  margin-right: 20px;
   &: hover {
     box-shadow: 0px 0px 12px rgba(96, 219, 251, 1);
     cursor: pointer;

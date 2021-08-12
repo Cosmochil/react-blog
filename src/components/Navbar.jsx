@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+const LS = {};
 
 function Navbar() {
   const Navbar = styled.nav`
@@ -17,7 +20,7 @@ function Navbar() {
   const NavLinkContainer = styled.div`
     margin-left: auto;
   `;
-  const NavLinks = styled.a`
+  LS.NavFixedItem_LINK = styled(Link)`
     margin-left: 16px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -32,10 +35,10 @@ function Navbar() {
     <div>
       <Navbar className="navbar">
         <NavHeader>React Blog</NavHeader>
-        
+
         <NavLinkContainer className="navlinks">
-          <NavLinks href="/blog">HOME</NavLinks>
-          <NavLinks href="/create">NEW BLOG</NavLinks>
+          <LS.NavFixedItem_LINK to="/blog">Home</LS.NavFixedItem_LINK>
+          <LS.NavFixedItem_LINK to="/create">New Blog</LS.NavFixedItem_LINK>
         </NavLinkContainer>
       </Navbar>
     </div>
