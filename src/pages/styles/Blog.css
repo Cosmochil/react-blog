@@ -1,0 +1,30 @@
+h2 {
+    font-size: 2rem;
+    color: #60dbfb;
+}
+
+.content {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create input, .create textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    box-sizing: border-box;
+    display: block;
+}

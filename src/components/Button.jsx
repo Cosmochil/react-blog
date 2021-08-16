@@ -9,8 +9,10 @@ export default styled.button`
   font-family: "ItimReg";
   padding: 7px 14px;
   margin-right: 20px;
+  margin-top: 10px;
   &: hover {
     box-shadow: 0px 0px 12px rgba(96, 219, 251, 1);
     cursor: pointer;
+    transition: .3s;
   }
 `;

@@ -37,7 +37,7 @@ function Navbar() {
         <NavHeader>React Blog</NavHeader>
 
         <NavLinkContainer className="navlinks">
-          <LS.NavFixedItem_LINK to="/blog">Home</LS.NavFixedItem_LINK>
+          <LS.NavFixedItem_LINK to="/blogs">Home</LS.NavFixedItem_LINK>
           <LS.NavFixedItem_LINK to="/create">New Blog</LS.NavFixedItem_LINK>
         </NavLinkContainer>
       </Navbar>
