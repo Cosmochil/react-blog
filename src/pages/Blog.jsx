@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Body from "../components/Body";
 import Create from '../components/Create'
 import BlogDetails from "../components/BlogDetails";
+import NotFound from "../components/NotFound"
 import { Route, Switch } from "react-router-dom";
 
 function Blog() {
@@ -27,6 +28,9 @@ function Blog() {
           </Route>
           <Route exact path="/blogs/:id">
             <BlogDetails />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </Content>
